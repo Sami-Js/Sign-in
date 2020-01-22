@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>تسجيل الدخول</title>
+</head>
+<body>
+        <div class="header-brand">
+           <div class="container">
+                <div class="brand-img">
+                    <img class="img-full" src="img.png" alt="brand-Yanbu">
+                </div>
+                <div class="brand-text">
+                    <h4>المملكة العربية السعودية</h4>
+                    <h4>الهيئة الملكية للجبيل وينبع</h4>     
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-sign">
+             <div class="box-sign">
+                <div class="container">
+                    <div class="header-sign">
+                        <h3>تسجيل الدخول</h3>
+                        <span>الخدمات الالكترونية</span>
+                    </div>
+                    <form name="signIn">
+                        <div class="username">
+                            <span>اسم المستخدم</span>
+                            <input type="text" placeholder="اسم المستخدم" name="username" autofocus>
+                        </div>
+                        <div class="password">
+                            <span>كلمة المرور</span>
+                            <input type="password" placeholder="كلمة المرور" name="password">
+                            <img id="show"  src="svg/eye.svg">
+                        </div>
+    
+                        <div class="btn-submit">
+                            <button>تسجيل الدخول</button>
+                            <span></span>
+                           <a href="#"><img  src="svg/key.svg"> نسيت كلمة المرور</a>
+                        </div>
+                    </form>
+    
+                    <div class="no-acount">ليس لديك حساب ؟ <a href="#">سجل الآن</a></div>
+    
+                </div>
+             </div>
+        </div>
+
+
+        <script>
+        document.querySelector('#show').addEventListener('click', function (){
+             if(signIn.password.type === "password"){
+                signIn.password.type = "text";
+                this.style.opacity = 1 ;
+             }else{
+                 signIn.password.type = "password";
+                 this.style.opacity = .5 ;
+             }
+        })
+        </script>
+</body>
+</html>

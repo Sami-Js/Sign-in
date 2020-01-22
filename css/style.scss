@@ -1,0 +1,232 @@
+//variable 
+$backColor : rgb(255, 255, 255) ;
+$main-color: #721722 ;
+$secondry-color: #eee ;
+
+
+
+// main font
+@font-face{
+    src: url(../font/ged-bold.ttf);
+    font-family: 'ged-bold';
+}
+
+@font-face{
+    src: url(../font/ged-reg.ttf);
+    font-family: 'ged-reg';
+}
+
+
+
+// global class 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.full-dim {
+    width: 100% ;
+    height: 100% ;
+}
+
+.img-full {
+   @extend .full-dim;
+}
+
+.container{
+    padding: 0 1em;
+    width: 100%;
+}
+
+
+html{
+    font-size: 10px ;
+    direction: rtl;
+    font-family: 'ged-reg';
+}
+
+body , html{
+    background: #eee;
+    @extend .full-dim ;
+    overflow: hidden;
+}
+
+
+.header-brand .container{
+    width: 100% ;
+    background-color: $backColor ;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    padding: 2em 0;
+
+    .brand-img{
+        width: 12.5em;
+        height: 9em;
+    }
+
+    .brand-text{
+        font-size: 1.6em;
+        align-self: center ;
+        color: #721722;
+    }
+
+}
+
+
+.content-sign{
+    height: calc(100% - 14em) ;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+
+    & > * {
+        box-sizing: border-box;
+    }
+
+    .box-sign{
+        width: 55em ;
+        border-radius: 10px ;
+        box-shadow: 0 1px 3px 0px rgba(0,0,0,.3);
+        background: $backColor;
+        height: 78% ;
+        padding: 3em ;
+        display: flex; 
+        justify-content: center ;
+        .header-sign{
+            width: 100% ;
+            padding: 1em 0 ;
+            padding-right: .2em;
+            font-size: 2em ;
+            margin-top: 3%;
+            span {
+                font-size: .8em ;
+            }
+        }
+
+    }
+
+
+    form{
+        width: 100% ;
+       .username , .password{
+           display: flex;
+           flex-direction: column;
+           font-size: 1.6rem;
+           margin: 2.5em 0 ;
+           span{
+               padding-bottom: .5em ;
+               padding-right: .2em;
+           }
+
+           input{
+               border-radius: 5px ;
+               border: 1px solid rgba(0,0,0,.3)  ;
+               padding: .7em 1.5em  ;
+               outline: none ;
+               background: rgba(238, 238, 238, 0.2) ;
+               font-size: 1em;
+               box-shadow: 0px 0px 5px 0px rgba(0,0,0,.1);
+               &::placeholder{
+                   opacity: .8;
+               }
+
+               &:focus{
+                border: 2px solid rgba(102, 24, 24, 0.452) ;
+               }
+           }
+
+
+       }
+
+       img{
+        width: 20px ;
+        height: 20px ;
+       }
+
+    }
+
+}
+
+
+.password{
+    position: relative;
+    img{
+        position: absolute ;
+        top: 38px ;
+        left: 25px ;
+        background: white ;
+        cursor: pointer ;
+        opacity: .5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+   
+}
+
+
+.btn-submit{
+    margin: 6.7em 0 ;
+    display: flex;
+    button{
+        padding: .9em 2em ;
+        padding-bottom: .7rem 1.5rem ;
+        border: none ;
+        background: $main-color;
+        color: $backColor;
+        font-family: 'ged-reg';
+        border-radius: 5px ;
+        outline: none ;
+        line-height: 1.3;
+        cursor: pointer;
+        &:active{
+            transform: scale(.98)
+        }
+    }
+
+    span{
+        width: 1px ;
+        background: rgba(0,0,0,.1);
+        height: 30px ;
+        margin: 0 4em ;
+        margin-top: .5em;
+        
+    }
+
+
+    a{
+       display: flex;
+       align-items: center ;
+       margin-bottom: 5px  ;
+       font-size: 1.3rem ;
+       text-decoration: none;
+       color: rgb(17, 17, 17);
+       img{
+           margin: 0 5px ;
+           opacity: .5;
+           width: 15px ;
+           height: 15px ;
+       }
+    }
+}
+
+
+
+.no-acount{
+    font-size: 1.4rem ;
+    text-align:center;
+    a{
+        color: $main-color;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
