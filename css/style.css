@@ -31,7 +31,6 @@ html {
 
 body, html {
   background: #eee;
-  overflow: hidden;
   height: 100vh ;
 }
 
@@ -66,7 +65,7 @@ body, html {
 }
 
 .content-sign {
-  height: calc(100% - 14em);
+  height: 100% ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +89,7 @@ body, html {
 
 .content-sign .box-sign {
   width: 55em;
+  height: 90% !important ;
   border-radius: 10px;
   -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3);
@@ -179,7 +179,7 @@ body, html {
 
 .password img {
   position: absolute;
-  top: 48% ;
+  top: 55% ;
   left: 5% ;
   background: white;
   cursor: pointer;
@@ -208,7 +208,6 @@ body, html {
   outline: none;
   line-height: 1.3;
   cursor: pointer;
-  font-size: 1.2em ;
 }
 
 .btn-submit button:active {
@@ -254,11 +253,3 @@ body, html {
   font-weight: bold;
   text-decoration: none;
 }
-
-
-@media (max-width: 1280px ) {
-  html {
-    font-size: 7px ;
-  }
-}
-/*# sourceMappingURL=style.css.map */
