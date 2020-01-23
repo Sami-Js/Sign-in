@@ -31,19 +31,14 @@ html {
 
 body, html {
   background: #eee;
-  height: 100vh ;
 }
 
-.header-brand .container {
+.header-brand {
   width: 100%;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -51,12 +46,21 @@ body, html {
   padding: 2em 0;
 }
 
-.header-brand .container .brand-img {
+.header-brand .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-brand .brand-img {
   width: 12.5em;
   height: 9em;
 }
 
-.header-brand .container .brand-text {
+.header-brand .brand-text {
   font-size: 1.6em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -65,16 +69,12 @@ body, html {
 }
 
 .content-sign {
-  height: 100% ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .content-sign > * {
@@ -82,20 +82,15 @@ body, html {
           box-sizing: border-box;
 }
 
-
-.content-sign .box-sign .container{
-  height: 100% ;
-}
-
 .content-sign .box-sign {
   width: 55em;
-  height: 90% !important ;
   border-radius: 10px;
   -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3);
   background: white;
-  height: 78%;
+  height: 60em;
   padding: 3em;
+  margin: 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,8 +174,8 @@ body, html {
 
 .password img {
   position: absolute;
-  top: 55% ;
-  left: 5% ;
+  top: 38px;
+  left: 25px;
   background: white;
   cursor: pointer;
   opacity: .5;
@@ -253,3 +248,4 @@ body, html {
   font-weight: bold;
   text-decoration: none;
 }
+/*# sourceMappingURL=style.css.map */
